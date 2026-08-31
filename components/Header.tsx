@@ -1,14 +1,26 @@
 import { View, Text } from 'react-native'
+import { styles } from '../styles/header.styles'
+
+import { Feather } from "@expo/vector-icons";
 
 const Header = () => {
 
     return (
 
-        <View>
+        <View style={styles.header}>
 
-            <Text>Este es el header</Text>
+            <View style={styles.container_logo}>
+                <Text style={styles.logo}>matdev</Text>
+            </View>
+
+            <View>
+                <Feather name='user' />
+            </View>
 
         </View>
     )
-}
+
+};
+
+
 export { Header }
