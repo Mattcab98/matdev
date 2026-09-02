@@ -4,6 +4,6 @@ export const colors = {
   secondary: '#7000FF',
   tertiary: '#12121E',
   white: '#FFFFFF',
-  black: '#000000'
+  black: '#11121d'
 
 } as const ;
