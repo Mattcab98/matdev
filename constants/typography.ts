@@ -1,7 +1,19 @@
-export const fonts = {
+const fonts = {
+    sora: {
+        regular: "Sora_400Regular",
+        bold: "Sora_700Bold",
+    },
 
-    headline: 'Sora',
-    body: 'Hanken Grotesk',
-    label: 'JetBrains Mono',
+    hanken: {
+        regular: "HankenGrotesk_400Regular",
+        bold: "HankenGrotesk_700Bold",
+    },
 
+    jetbrains: {
+        regular: "JetBrainsMono_400Regular",
+        bold: "JetBrainsMono_700Bold",
+    },
 } as const;
+
+
+export { fonts };
