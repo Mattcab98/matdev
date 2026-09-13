@@ -11,7 +11,7 @@ const HomeScreen = () => {
 
       <AnimatedBackground />
 
-      <ScrollView>
+      <ScrollView contentContainerStyle={styles.scrollContent}> 
         <Header />
 
         <View style={styles.content}>

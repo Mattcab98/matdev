@@ -1,5 +1,6 @@
-import { View, Text } from 'react-native'
+import { View, Text, useWindowDimensions } from 'react-native'
 import { styles } from './Badge.styles';
+
 
 
 interface props {
@@ -7,11 +8,19 @@ interface props {
 }
 
 const Badge = ({ skillsName }: props) => {
+
+    const { width } = useWindowDimensions();
+
+
     return (
 
         <>
             <View style={styles.badge}>
-                <Text style={styles.skillsName}>{skillsName}</Text>
+                <Text
+                    style={[ styles.skillsName,
+                        { fontSize: width < 400 ? 10 : 12, }
+                    ]}>
+                        {skillsName}</Text>
             </View>
         </>
 

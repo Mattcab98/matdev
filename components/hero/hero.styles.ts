@@ -5,23 +5,31 @@ import { fonts } from "../../constants/typography";
 
 const styles = StyleSheet.create({
 
+    container__hero: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: 50,
+    },
+
     hero: {
-        flexDirection: 'column',
-        gap: 50,
-        paddingHorizontal: 20,
-        paddingVertical: 40,
+        alignItems: 'center',
+        gap: 40,
     },
 
     container_skills: {
-        flexDirection: 'row',
-        gap: 20,
-        flexWrap: 'wrap',
+        width: '100%',
+        maxWidth: 350,
+        gap: 10,
         justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
     },
 
     container_txt: {
         gap: 20,
         justifyContent: 'center',
+        alignItems: 'center',
     },
 
     hero__h1: {
@@ -29,14 +37,24 @@ const styles = StyleSheet.create({
         color: colors.white,
         fontSize: 40,
         textAlign: 'center',
-
+        width: '100%',
+        maxWidth: 600,
     },
 
     hero__h2: {
         fontFamily: fonts.sora.regular,
         color: colors.white,
+        opacity: 0.8,
         textAlign: 'center',
-        fontSize: 15,
+        fontSize: 13,
+    },
+
+    hero__name: {
+        fontFamily: fonts.jetbrains.regular,
+        color: colors.white,
+        opacity: 0.5,
+        fontSize: 12,
+        textAlign: 'center',
     },
 
     container_button: {
@@ -52,10 +70,10 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         borderRadius: 8,
         fontFamily: fonts.jetbrains.regular,
-     },
+    },
 
     button__2: {
-        
+
         width: 180,
         backgroundColor: 'transparent',
         borderWidth: 1,
