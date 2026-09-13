@@ -1,10 +1,14 @@
 import { StyleSheet } from "react-native";
 
-import { colors } from "../../constants/colors";
 
 const styles = StyleSheet.create({
     container: {
+        paddingBottom: 50,
         flex: 1,
+    },
+
+    container__header: {
+        width: '100%',
     },
 
     scrollContent: {
@@ -12,9 +16,9 @@ const styles = StyleSheet.create({
     },
 
     content: {
-        width: '85%',
         alignSelf: 'center',
         flex: 1,
+        width: '90%',
     },
 });
 

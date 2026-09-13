@@ -1,26 +1,42 @@
+
 import { View, ScrollView } from "react-native";
 
+import { AnimatedBackground } from "../../components/animations/AnimatedBackground/AnimatedBackground";
+
 import { Header } from "../../components/header/Header";
-import { AnimatedBackground } from "../../components/AnimatedBackground/AnimatedBackground";
 import { Hero } from "../../components/hero/Hero";
+
 import { styles } from "./home.styles";
 
 const HomeScreen = () => {
-  return (
-    <View style={styles.container}>
 
-      <AnimatedBackground />
+    return (
+        <View style={styles.container}>
 
-      <ScrollView contentContainerStyle={styles.scrollContent}> 
-        <Header />
+            {/* BACKGROUND */}
 
-        <View style={styles.content}>
-          <Hero />
+            <AnimatedBackground />
+
+            {/* HEADER */}
+
+            <View style={styles.container__header}>
+                <Header />
+            </View>
+
+            {/* CONTENT */}
+
+            <ScrollView
+                style={styles.content}
+                contentContainerStyle={styles.scrollContent}
+                showsVerticalScrollIndicator={false}
+            >
+
+                <Hero />
+
+            </ScrollView>
+
         </View>
-      </ScrollView>
-
-    </View>
-  );
+    );
 };
 
 export { HomeScreen };

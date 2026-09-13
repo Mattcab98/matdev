@@ -7,16 +7,14 @@ const styles = StyleSheet.create({
         backgroundColor: colors.black,
         height: 60,
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'space-around',
         alignItems: 'center',
-        paddingHorizontal: 15,
     },
 
     logo: {
         color: colors.white,
         fontSize: 20,
         fontWeight: 'bold',
-        paddingLeft: 10
     },
 
     user_icon: {
